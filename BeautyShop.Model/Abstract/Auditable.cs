@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BeautyShop.Model.Abstract
 {
-    public abstract class Auditable: IAuditable
+    public abstract class Auditable : IAuditable
     {
-        
-       public DateTime? CreatedDate { set; get; }
+
+        public DateTime? CreatedDate { set; get; }
 
         [MaxLength(256)]
         public string CreatedBy { set; get; }
@@ -29,5 +29,6 @@ namespace BeautyShop.Model.Abstract
         {
             set; get;
         }
+    }
 
 }

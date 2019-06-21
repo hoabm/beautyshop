@@ -16,7 +16,7 @@ namespace BeautyShop.Model.Abstract
         string MetaKeyword { set; get; }
         string MetaDescription { set; get; }
 
-        public bool Status { set; get; }
+        bool Status { set; get; }
 
 
     }
