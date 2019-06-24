@@ -15,6 +15,7 @@ namespace BeautyShop.Data
         public DbSet<Order> Orders { set; get; }
         public DbSet<OrderDetail> OrderDetails { set; get; }
         public DbSet<Page> Pages { set; get; }
+        public DbSet<Post> Posts {set; get;}
 
         public DbSet<PostCategory> PostCategorys { set; get; }
 
@@ -31,7 +32,7 @@ namespace BeautyShop.Data
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
 
 
-        //Ghi de phuong thuc OnModelCreating se chay khi khoi tao emtity farmwork
+        //Ghi de phuong thuc OnModelCreating se chay khi khoi tao emtity framemwork
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
